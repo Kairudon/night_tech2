@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>採点結果</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="score-container">
+        <div class="score-header">
+            <h1>採点結果</h1>
+        </div>
+        <div class="score-main">
+            <div class="score-main-left">
+                <div class="score-number" id="score-number">60.0</div>
+                <div class="score-details" id="score-details">
+                    <p id="score-voice">声量：80</p>
+                    <p id="score-gesture">身振り：60</p>
+                    <p id="score-posture">姿勢：80</p>
+                    <p id="score-vibrato">ビブラート：0</p>
+                    <p id="score-expression">抑揚：80</p>
+                    <p id="score-kobushi">こぶし：0</p>
+                    <p id="score-longTone">ロングトーン：0</p>
+                </div>
+            </div>
+            <div class="score-main-right">
+                <canvas id="scoreChart"></canvas>
+            </div>
+        </div>
+        <div class="score-footer">
+            <button id="nextButton">結果</button>
+            <button onclick="window.location.href='nextpage2.html';">次へ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
